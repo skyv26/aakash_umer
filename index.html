@@ -14,18 +14,55 @@
 
     <form action="" id="survey-form">
       <div class="input_container">
-        <label for="name">name</label>
-        <input type="text" id="name" required />
+        <label id="name-lable" for="name">name</label>
+        <input type="text" id="name" placeholder="Enter you name" required />
       </div>
       
       <div class="input_container">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" required />
+        <label id="email-lable" for="email">E-mail</label>
+        <input type="email" id="email" placeholder="Enter you email" required />
       </div>
       
       <div class="input_container">
-        <label for="number">Age</label>
-        <input type="number" id="number" min="10" max="99" required/>
+        <label id="number-lable" for="number">Age</label>
+        <input type="number" id="number" min="10" max="99"  placeholder="Enter your age" required/>
+      </div>
+
+      <div class="input_container">
+        <label for="gender-label">Please select you gender</label>
+        <select id="dropdown">
+          <option value="">---</option>
+          <option value="male">Male</option>
+          <option  value="female">Female</option>
+          <option  value="none">Not to mention</option>
+        </select>
+      </div>
+
+      <div class="input_container">
+        <label for="gender-label">From where you got this form idea ?</label>
+        <div class="radio_wrapper">
+          <label for="radio-btn">
+            <input type="radio" name="newspaper" id="radio-btn" value="Newspaper"> Newspaper
+          </label>
+        </div>
+        
+        <div class="radio_wrapper">
+          <label for="radio-btn">
+            <input type="radio" name="mail" id="radio-btn" value="E-mail"> E-mail
+          </label>
+        </div>
+        
+        <div class="radio_wrapper">
+          <label for="radio-btn">
+            <input type="radio" name="freecodecamp" id="radio-btn" value="FreeCodeCamp"> FreeCodeCamp
+          </label>
+        </div>
+        <div class="radio_wrapper">
+          <label for="radio-btn">
+            <input type="radio" name="google" id="radio-btn" value="Google"> Google
+          </label>
+        </div>
+        
       </div>
 
     </form>
