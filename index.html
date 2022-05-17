@@ -1,100 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <h1 id="title">Collaboration Form</h1>
-    <p id="description">We are on collaboration in Form Challenge</p>
+    <main class="main">
 
-    <form action="" id="survey-form">
-      <div class="input_container">
-        <label id="name-lable" for="name">name</label>
-        <input type="text" id="name" placeholder="Enter you name" required />
-      </div>
-      
-      <div class="input_container">
-        <label id="email-lable" for="email">E-mail</label>
-        <input type="email" id="email" placeholder="Enter you email" required />
-      </div>
-      
-      <div class="input_container">
-        <label id="number-lable" for="number">Age</label>
-        <input type="number" id="number" min="10" max="99"  placeholder="Enter your age" required/>
+      <div class="introduction">
+        <h1 id="title">Collaboration Form</h1>
+        <p id="description"><em>We are on collaboration in Form Challenge</em></p>
       </div>
 
-      <div class="input_container">
-        <label for="gender-label">Please select you gender</label>
-        <select id="dropdown">
-          <option value="">---</option>
-          <option value="male">Male</option>
-          <option  value="female">Female</option>
-          <option  value="none">Not to mention</option>
-        </select>
-      </div>
+      <form action="" id="survey-form">
+        <div class="input_container">
+          <label id="name-lable" for="name">Name</label>
+          <input type="text" id="name" name="name-label" placeholder="Enter you name" required />
+        </div>
 
-      <div class="input_container">
-        <label for="gender-label">From where you got this form idea ?</label>
-        <div class="radio_wrapper">
-          <label for="radio-btn">
-            <input type="radio" name="newspaper" id="radio-btn" value="Newspaper"> Newspaper
+        <div class="input_container">
+          <label id="email-lable" for="email" >E-mail</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter you email"
+            name="email-label"
+            required
+          />
+        </div>
+
+        <div class="input_container">
+          <label id="number-lable" for="number">Age</label>
+          <input
+            type="number"
+            id="number"
+            min="10"
+            max="99"
+            name="number-label"
+            placeholder="Enter your age"
+            required
+          />
+        </div>
+
+        <div class="input_container">
+          <label for="gender-label">Please select you gender</label>
+          <select id="dropdown">
+            <option value="">---</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="none">Not to mention</option>
+          </select>
+        </div>
+
+        <div class="input_container radioContainer">
+          <p for="gender-label">From where you got this form idea ?</p>
+          <div class="radio_wrapper">
+            <label for="radio-btn">
+              <input
+                type="radio"
+                name="radio"
+                class="radio"
+                value="Newspaper"
+                checked
+              />
+              Newspaper
+            </label>
+          </div>
+
+          <div class="radio_wrapper">
+            <label for="radio-btn">
+              <input type="radio" name="radio" class="radio"  value="E-mail" />
+              E-mail
+            </label>
+          </div>
+
+          <div class="radio_wrapper">
+            <label for="radio-btn">
+              <input
+                type="radio"
+                name="radio"
+                value="FreeCodeCamp"
+                class="radio"
+              />
+              FreeCodeCamp
+            </label>
+          </div>
+          <div class="radio_wrapper">
+            <label for="radio-btn">
+              <input type="radio" name="radio" class="radio" value="Google" />
+              Google
+            </label>
+          </div>
+        </div>
+
+        <div class="input_container">
+          <p for="">What is your hobbies?</p>
+          <label for="">
+            <input type="checkbox" name="Gardening" value="Gardening" id="" />
+            Gardening
+          </label>
+
+          <label for="">
+            <input
+              type="checkbox"
+              name="Coin Collection"
+              value="Coin Collection"
+              id=""
+            />
+            Coin Collection
+          </label>
+
+          <label for="">
+            <input
+              type="checkbox"
+              name="Ticket Collection"
+              value="Ticket Collection"
+              id=""
+            />
+            Ticket Collection
+          </label>
+
+          <label for="">
+            <input type="checkbox" name="Cricket" value="Cricket" id="" />
+            Cricket
           </label>
         </div>
-        
-        <div class="radio_wrapper">
-          <label for="radio-btn">
-            <input type="radio" name="mail" id="radio-btn" value="E-mail"> E-mail
-          </label>
+
+        <div class="input_container">
+          <label for="information">Enter additional information</label>
+          <textarea name="information" id="" cols="30" rows="10"></textarea>
         </div>
-        
-        <div class="radio_wrapper">
-          <label for="radio-btn">
-            <input type="radio" name="freecodecamp" id="radio-btn" value="FreeCodeCamp"> FreeCodeCamp
-          </label>
-        </div>
-        <div class="radio_wrapper">
-          <label for="radio-btn">
-            <input type="radio" name="google" id="radio-btn" value="Google"> Googl
-          </label>
-        </div>
-      </div>
 
-      <div class="input_container">
-        <label for="">What is your hobbies?</label>
-        <label for="">
-          <input type="checkbox" name="Gardening" value="Gardening" id="">
-          Gardening
-        </label>
+        <input type="submit" name="submit" id="submit" />
+      </form>
+    </main>
 
-        <label for="">
-          <input type="checkbox" name="Coin Collection" value="Coin Collection" id="">
-          Coin Collection
-        </label>
-
-        <label for="">
-          <input type="checkbox" name="Ticket Collection" value="Ticket Collection" id="">
-          Ticket Collection
-        </label>
-
-        <label for="">
-          <input type="checkbox" name="Cricket" value="Cricket" id="">
-          Cricket
-        </label>
-      </div>
-
-      <div class="input_container">
-        <p>Enter additional information</p>
-        <textarea name="information" id="" cols="30" rows="10"></textarea>
-      </div>
-
-      <input type="submit" name="submit" id="submit">
-    </form>
-
-    <script  src="js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

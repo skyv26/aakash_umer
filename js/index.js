@@ -26,3 +26,6 @@ INSTRUCTIONS:
 
 // Once you have read the above messages, you can delete all comments. 
 "use strict";
+
+let radioButtonArray = document.getElementsByClassName("radio");
+let checkRadio = document.querySelector(".radioContainer");
